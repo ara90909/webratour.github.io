@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        @media (max-width:550px) {
+            .btn {
+                width: 20%;
+                font-size: 8px;
+            }
+        }
+
+        #hoper:hover {
+            transform: perspective(500px) rotateY(360deg) translateZ(60px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-light active">
+                <a class="navbar-brand" href="Home.html">
+                    <img src="image/logo/RaTour-Logo1.png" width="70px" alt="">
+                </a>
+            </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="warna" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="warna" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Parwis - Jabodetabek
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./jabodetabek/jakarta.html">Jakarta</a>
+                            <a class="dropdown-item" href="./jabodetabek/bogor.html">Bogor</a>
+                            <a class="dropdown-item" href="./jabodetabek/depok.html">Depok</a>
+                            <a class="dropdown-item" href="./jabodetabek/tangerang.html">Tangerang</a>
+                            <a class="dropdown-item" href="./jabodetabek/bekasi.html">Bekasi</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Info - Transport
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" target="blank"
+                                href="https://www.traveloka.com/id-id/kereta-api?id=16479885395396666144&adloc=id-id&kw=16479885395396666144_tiket%20kereta%20online&gmt=e&gn=g&gd=c&gdm=&gcid=386189918825&gdp=&gdt=&gap=&pc=5&cp=16479885395396666144_TRN-GEN-D-s_16479885395396666144_TCK&aid=38544975498&wid=kwd-30436741551&fid=&gid=1007706&kid=_k_Cj0KCQiApL2QBhC8ARIsAGMm-KG5aPXMwB1gSFZ6J0iB9S-ZznsraErqCafIVxKWmFrWTgITGU0g4WUaAuQFEALw_wcB_k_&utm_id=vQOIuxtg&ad_id=386189918825&target_id=kwd-30436741551&click_id=Cj0KCQiApL2QBhC8ARIsAGMm-KG5aPXMwB1gSFZ6J0iB9S-ZznsraErqCafIVxKWmFrWTgITGU0g4WUaAuQFEALw_wcB&group_id=38544975498&gclid=Cj0KCQiApL2QBhC8ARIsAGMm-KG5aPXMwB1gSFZ6J0iB9S-ZznsraErqCafIVxKWmFrWTgITGU0g4WUaAuQFEALw_wcB">Kereta</a>
+                            <a class="dropdown-item" target="blank"
+                                href="https://www.traveloka.com/id-id/tiket-pesawat">Pesawat</a>
+                            <a class="dropdown-item" target="blank"
+                                href="https://www.traveloka.com/id-id/tiket-bus-travel">Bus &
+                                Travel</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="warna" href="Home.html#hk">Hubungi Kami <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid"
+        style="padding-top: 5%; padding-bottom: 10%; background: url(./image/pexels-julius-silver-753626.jpg); background-size: cover; background-repeat: no-repeat;">
+        <div class="row" style="margin-top: 80px;">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12 text-center" style="align-self: center;">
+                        <div class="jumbotron" style="background-color: transparent; color: white; font-weight: bold;">
+                            <p style="font-size: 4vw; font-family: 'Poppins', sans-serif;">
+                                SELAMAT DATANG DI <br> WEBSITE RA - TOUR
+                            </p>
+                            <p class="text-center" style="width: 50%; margin-left: 25%; font-size: 1vw;">
+                                Disini Anda Dapat Menemukan Berbagai Macam Rekomendasi Tempat Pariwisata Jabodetabek,
+                                Tidak
+                                Hanya Itu, Disini Kalian Juga Dapat Melakukan Pemesanan Tiket Transport Anda Secara
+                                Online
+                                Melalui Mitra Kami Yaitu Traveloka.com atau hanya sekedar Cek Harga Tiket Transport
+                            </p>
+                            <button class="btn btn-primary mt-4">OUR SERVICES</button>
+                            <button class="btn btn-outline-light mt-4">KONTAK KAMI</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="jumbotron bg-primary">
+        <div class="container">
+            <h5 class="text-center text-dark">MENGAPA ANDA HARUS MEMILIH KAMI ? </h5>
+            <h1 class="text-center text-light" style="font-weight: bold; font-family: 'Poppins', sans-serif; ">BERIKUT
+                INI ALASANNYA</h1>
+            <div class="row text-center mt-4">
+                <div class="col-md-3 mt-3" id="hoper">
+                    <i class="fas fa-globe-asia text-primary"
+                        style="border-radius: 80px; background-color: white; border: 1px solid white; font-size: 40px; padding: 25px;"></i>
+                    <h6 class="mt-4">Recomended</h6>
+                    <p class="mt-2">Terlengkap dalam mencari tempat Wisata di Jabodetabek
+                    </p>
+                </div>
+                <div class="col-md-3 mt-3" id="hoper">
+                    <i class="fas fa-handshake-alt text-primary"
+                        style="border-radius: 80px; background-color: white; border: 1px solid white; font-size: 40px; padding: 25px;"></i>
+                    <h6 class="mt-4">Terpecaya</h6>
+                    <p class="mt-2">Kami memiliki Partner yang terpercaya dalam Pemesanan Tiket Online Yaitu
+                        <a href="https://www.traveloka.com/en-id/" target="blank"
+                            style="color: white;">Traveloka.com</a>
+                    </p>
+                </div>
+                <div class="col-md-3 mt-3" id="hoper">
+                    <i class="far fa-credit-card text-primary"
+                        style="border-radius: 80px; background-color: white; border: 1px solid white; font-size: 40px; padding: 25px;"></i>
+                    <h6 class="mt-4">Harga Terjangkau</h6>
+                    <p class="mt-2">Hemat Biaya Wisata, karena sudah kami rinci dalam setiap artikel yang kami
+                        buat
+                    </p>
+                </div>
+                <div class="col-md-3 mt-3" id="hoper">
+                    <i class="fas fa-users text-primary"
+                        style="border-radius: 80px; background-color: white; border: 1px solid white; font-size: 40px; padding: 25px;"></i>
+                    <h6 class="mt-4">Keamanan Terjamin</h6>
+                    <p class="mt-2">Privasi anda terjaga dalam melakukan pemesanan tiket maupun ketika anda
+                        menjelajahi website kami
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h6>
+                                <i class="fa fa-search" style="font-size: 20px;"></i>
+                                Cari Travel Impian Anda
+                            </h6>
+                            <div class="warna"
+                                style="background-color: white; width: 100%; height: 0.1px; margin-top: 1.5%;">
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <p>Pilih Domisili</p>
+                                    <div class="input-group mb-3">
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Parwis Jabodetabek</option>
+                                            <option value="1">Jakarta</option>
+                                            <option value="2">Bogor</option>
+                                            <option value="3">Depok</option>
+                                            <option value="4">Tangerang</option>
+                                            <option value="5">Bekasi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <p>Pilih Kategori</p>
+                                    <div class="input-group mb-3">
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Kategori</option>
+                                            <option value="1">Taman Bermain</option>
+                                            <option value="2">Taman Rekreasi</option>
+                                            <option value="3">WaterBoom</option>
+                                            <option value="4">Wisata Alam</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <p>Pilih Harga Tiket Masuk</p>
+                                    <div class="input-group mb-3">
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Harga Tiket</option>
+                                            <option value="1">Rp. 0 s/d Rp. 50.000</option>
+                                            <option value="2">Rp. 50.000 s/d Rp. 100.000</option>
+                                            <option value="3">Rp. 100.000 s/d Rp. 500.000</option>
+                                            <option value="4">Rp. 500.000 s/d Rp. 1.000.000</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="margin-top: 2.2%;">
+                                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit"
+                                        style="width: 100%;"><i class="fa fa-search"></i> Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="row">
+        <div class="col-md-12">
+            <i class="fa fa-search"></i>
+            <p>Cari Travel Impian Anda</p>
+        </div>
+    </div> -->
+
+    <!-- <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="list-group" data-aos="zoom-in-right">
+                    <div class="garis">
+                        <h6>Wisata Jabodetabek</h6>
+                        <div class="list"><a href="jakarta.html">Jakarta</a></div>
+                        <div class="list"><a href="">Bogor</a></div>
+                        <div class="list"><a href="">Depok</a></div>
+                        <div class="list"><a href="">Tangerang</a></div>
+                        <div class="list"><a href="bekasi.html">Bekasi</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class=" list-group1" data-aos="zoom-in-left">
+                    <div class="garis">
+                        <h6>Tiket Transport</h6>
+                        <div class="list1"><a href="jakarta.html">Kereta Api</a></div>
+                        <div class="list1"><a href="">Pesawat</a></div>
+                        <div class="list1"><a href="">Bus & Travel</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container mt-5">
+        <h3 style="text-align: center; font-family: 'Poppins', sans-serif;">WISATA JAKARTA FAVORIT</h3>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-right">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./image/jakarta/kota-tua.jpg" alt="Card image cap">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Wisata Kota Tua Jakarta</h5>
+                        <p class="card-text">HTM : Gratis</p>
+                        <p class="card-text">Alamat : Kawasan Kota Tua, Taman Fatahillah No.1, RT.7/RW.7, Pinangsia,
+                            Taman Sari, West Jakarta City, Jakarta 11110</p>
+                        <a href="./jabodetabek/jakarta.html#kottua" target="blank"
+                            class="btn btn-primary btn-sm">Selengkapnya
+                            ..</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./image/jakarta/tidung.jpg" alt="Card image cap">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Pulau Tidung</h5>
+                        <p class="card-text">HTM : Rp.370.000</p>
+                        <p class="card-text">Alamat : Pulau Tidung, Kec. Kepulauan Seribu Sel., Kab. Administrasi
+                            Kepulauan Seribu, Daerah Khusus Ibukota Jakarta</p>
+                        <a href="./jabodetabek/jakarta.html#tidung" target="blank"
+                            class="btn btn-primary btn-sm">Selengkapnya
+                            ..</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-left">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./image/jakarta/monas.jpg" alt="Card image cap">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Monumen Nasional</h5>
+                        <p class="card-text">HTM : Rp.15.000</p>
+                        <p class="card-text">Alamat : Gambir, Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus
+                            Ibukota Jakarta</p>
+                        <a href="./jabodetabek/jakarta.html#monas" target="blank"
+                            class="btn btn-primary btn-sm">Selengkapnya
+                            ..</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h3 style="text-align: center; font-family: 'Poppins', sans-serif;">WISATA BOGOR FAVORIT</h3>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-right">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="image/bogor/taman-sakura-bogor.jpg" alt="Card image cap">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Taman Sakura, Kebun Raya Cibodas</h5>
+                        <p class="card-text">HTM : Rp 16.500/Orang</p>
+                        <p class="card-text">Alamat : Jl. Taman Cibodas, Sindangjaya, Kec. Cipanas, Kabupaten
+                            Cianjur,
+                            Jawa Barat 43253</p>
+                        <a href="./jabodetabek/bogor.html#sakura" target="blank"
+                            class="btn btn-primary btn-sm">Selengkapnya
+                            ..</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="image/bogor/wisata-gunung-pancar-sentul.jpg" alt="Card image cap">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Gunung Pancar</h5>
+                        <p class="card-text">HTM : Rp 5.000 s/d 10.000</p>
+                        <p class="card-text">Alamat : Karang Tengah, Kec. Babakan Madang, Kabupaten Bogor, Jawa
+                            Barat
+                        </p>
+                        <a href="./jabodetabek/bogor.html#pancar" target="blank"
+                            class="btn btn-primary btn-sm">Selengkapnya
+                            ..</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-left">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="image/bogor/cgbidada.jpg" alt="Card image cap">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Air Terjun Curug Bidadari</h5>
+                        <p class="card-text">HTM : Rp 25.000 s/d 40.000</p>
+                        <p class="card-text">Alamat : Jl. Sentul Paradise Park, Bojong Koneng, Kec. Babakan Madang,
+                            Kabupaten Bogor, Jawa Barat 16810</p>
+                        <a href="./jabodetabek/bogor.html#bidada" target="blank"
+                            class="btn btn-primary btn-sm">Selengkapnya
+                            ..</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="bg-primary mt-5">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                </div>
+                <div class="row" id="kaki">
+                    <div class="col-md-3">
+                        <img alt="Bootstrap Image Preview" src="image/logo/RaTour-Logo.png" width="70%"
+                            style="margin-left: 50px; margin-top: 20px;" />
+                    </div>
+                    <div class="col-md-3 mt-5">
+                        <h3>
+                            Ra - Tour & Travel
+                        </h3>
+                        <p>
+                            Jln Mandor Basar no.54 Rangkapan jaya, Pancoran Mas Depok, Jawa Barat 16435
+                        </p>
+                    </div>
+                    <div class="col-md-3 mt-5" style="font-size: 18px;">
+                        <h3>
+                            Follow Us In
+                        </h3>
+                        <div>
+                            <i class="fab fa-instagram"></i> @ratourtravel
+                        </div>
+                        <div>
+                            <i class="fab fa-facebook"></i> Ra Tour Travel
+                        </div>
+                        <div>
+                            <i class="fab fa-youtube"></i> Ra Tour Travel
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-5" style="font-size: 18px;" id="hk">
+                        <h3>
+                            Hubungi Kami
+                        </h3>
+                        <div>
+                            <i class="fas fa-envelope"></i> <a style="color: white;" target="blank"
+                                href="mailto:ratourtra@gmail.com?subject=Ini%20adalah%20judul%20email%20">
+                                ratourtra@gmail.com</a>
+                        </div>
+                        <div>
+                            <i class="fab fa-whatsapp"></i> <a href="https://wa.me/6289138507382" target="blank"
+                                style="color: white;">
+                                +6289138507382</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
